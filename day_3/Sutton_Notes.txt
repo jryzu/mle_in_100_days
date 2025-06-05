@@ -1,0 +1,6 @@
+Questions:
+1. How does the EYY actor FFNN emulate a theta-parametrized policy? Guess: gradietn descent wrt (5) which is gradient of expected cumulated discounted or average reward is sufficient, but is there more to that?
+2. How does the EYY critic FFNN satisfy the compatibility condition (4) as our f_w? Footnote mentions that it must be linear in the features, is there more to that?
+3. Section 3, applying the policy/actor as a Gibbs distribution, given compatiblity condition (4), yields the critic f_w to be condition expectation 0 wrt state. Is the EYY critic FFNN naturally mean 0 wrt any given state, since we use it to model the mean 0 advantage?
+4. Comment: at every iteration for the actor/policy, the critic is trained (on a couple iterations, why not to full convergence?) such that to minimize MSE wrt excess reward)
+5. Finally, I read and understood the above with the reference of the average reward formulation, so now I should revisit this with the start state formulation in mind.
