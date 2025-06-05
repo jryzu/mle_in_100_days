@@ -4,3 +4,6 @@ Questions:
 3. Section 3, applying the policy/actor as a Gibbs distribution, given compatiblity condition (4), yields the critic f_w to be condition expectation 0 wrt state. Is the EYY critic FFNN naturally mean 0 wrt any given state, since we use it to model the mean 0 advantage?
 4. Comment: at every iteration for the actor/policy, the critic is trained (on a couple iterations, why not to full convergence?) such that to minimize MSE wrt excess reward)
 5. Finally, I read and understood the above with the reference of the average reward formulation, so now I should revisit this with the start state formulation in mind.
+References: 
+- Understand what I did and good coding practices?: https://medium.com/analytics-vidhya/coding-ppo-from-scratch-with-pytorch-part-3-4-82081ea58146
+- Tricks?: https://medium.com/@z4xia/coding-ppo-from-scratch-with-pytorch-part-4-4-4e21f4a63e5c
