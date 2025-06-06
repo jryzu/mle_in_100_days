@@ -1,0 +1,3 @@
+Notes:
+- where to read about Q learning non-stationarity for multi-agent environments
+- 
